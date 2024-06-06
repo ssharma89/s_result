@@ -1,0 +1,33 @@
+/* definig style for result app */
+table{
+    width: 300px;
+    height: 200px;
+    background: yellow;
+    color: blue;
+    margin: auto;
+    box-shadow: 2px 2px 10px;
+    border-radius: 5px;
+    padding: 20px;   
+}
+input{
+    border: 0;
+
+}
+input:focus{
+    outline: 2px solid blue;
+    border-radius: 4px;
+
+}
+button{
+    width: 180px;
+    height: 30px;
+    background: red;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+output{
+    font-size: 18px;
+    color: black;
+}
