@@ -1,0 +1,70 @@
+<!-- 
+    finding grade of studnets
+    Avg         Grade
+    90-100      A+
+    80-89       A
+    70-79       B+
+    60-69       B
+    50-59       C+
+    35-49       C
+    0-34        Fail
+    Note:       Min Marks in each subject to pass the exam is 34
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Card</title>
+    <link rel="stylesheet" href="grade.css">
+    <script src="grade.js"></script>
+</head>
+<body>
+    <table>
+        <caption><h3>Marks Report</h3></caption>
+        <tbody>
+            <tr>
+               <td><label for="mo">Roll No</label></td>
+               <td><input type="text" id="mo" autofocus></td> 
+            </tr>
+            <tr>
+                <td><label for="sna">Name</label></td>
+                <td><input type="text" id="sna"></td>
+            </tr>
+            <tr>
+                <td><label>Marks</label></td>
+            </tr>
+            <tr>
+                <td><label for="html">HTML</label></td>
+                <td><input type="text" name="" id="html" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td><label for="CSS">CSS</label></td>
+                <td><input type="text" name="" id="css" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td><label for="js">JavaScript</label></td>
+                <td><input type="text" id="js" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td><label for="bs">BootStrap</label></td>
+                <td><input type="text" id="bs" maxlength="3"></td>
+            </tr>
+
+        </tbody>
+        <tfoot >
+            <tr align="center">
+                <td colspan="2"> <button onclick="getResult()">Get Result</button></td>
+            </tr>
+            <tr align="right">
+                <td colspan="2">
+                    <output id="total"></output> <br>
+                    <output id="average"></output> <br>
+                    <output id="grade"></output> <br>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
